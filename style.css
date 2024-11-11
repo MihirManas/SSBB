@@ -282,13 +282,6 @@ header .Header nav ul .CTA:hover{
     text-align: left;
 }
 
-#Academics .Academic-Bottom .icon {
-    flex: 0 0 auto;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 10px;
-}
-
 @media(max-width: 480px) {
     header .Brand h1 {
         font-size: 1.8rem;
