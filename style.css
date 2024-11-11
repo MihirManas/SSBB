@@ -282,31 +282,6 @@ header .Header nav ul .CTA:hover{
     text-align: left;
 }
 
-@media(max-width: 480px) {
-    header .Brand h1 {
-       /* font-size: 1.8rem;*/
-    }
-
-    header .Header nav ul a {
-        font-size: 1rem;
-	letter-spacing: 1px;
-	    margin-top: 1px;
-    }
-	header .Header nav ul .CTA{
-        visibility: hidden;
-    }
-    
-    header .Header nav ul .CTA:hover{
-        visibility: hidden;
-    }
-
-    #Home h1 {
-        font-size: 2.5rem;
-    }
-
-    #Home .button .CTA {
-        font-size: 1.6rem;
-    }
 
 /* Adjustments for Tablets */
 @media(max-width: 768px) {
@@ -338,7 +313,7 @@ header .Header nav ul .CTA:hover{
     }
 
     header .Brand h1 {
-        /*font-size: 2.5rem;*/
+        font-size: 2.5rem;
         border: double whitesmoke 3px;
     }
 
