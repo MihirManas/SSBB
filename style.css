@@ -290,6 +290,7 @@ header .Header nav ul .CTA:hover{
     header .Header nav ul a {
         font-size: 1rem;
 	letter-spacing: 1px;
+	    margin-top: 1px;
     }
 	header .Header nav ul .CTA{
         visibility: hidden;
