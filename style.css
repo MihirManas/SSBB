@@ -338,7 +338,7 @@ header .Header nav ul .CTA:hover{
     }
 
     header .Brand h1 {
-        font-size: 2.5rem;
+        /*font-size: 2.5rem;*/
         border: double whitesmoke 3px;
     }
 
