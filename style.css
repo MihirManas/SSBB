@@ -284,7 +284,7 @@ header .Header nav ul .CTA:hover{
 
 @media(max-width: 480px) {
     header .Brand h1 {
-        font-size: 1.8rem;
+       /* font-size: 1.8rem;*/
     }
 
     header .Header nav ul a {
