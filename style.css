@@ -331,22 +331,37 @@ header .Header nav ul .CTA:hover{
 
 /* Adjustments for Mobile Devices */
 @media(max-width: 480px) {
-    #Academics .Academic-Item {
-        flex-basis: 90%;
-        padding: 15px;
+    header .Header{
+        display: block;
     }
 
-    #Academics .Academic-Top h1 {
-        font-size: 3rem;
+    header .Brand h1 {
+        font-size: 2.5rem;
+        border: double whitesmoke 3px;
     }
 
-    #Academics .Academic-Top p {
-        font-size: 1rem;
+    header .Header nav ul a {
+        font-size: 1.5rem;
     }
 
-    #Academics .Academic-Bottom .icon {
-        height: 60px;
-        width: 60px;
+    header .Header nav ul .CTA{
+        visibility: collapse;
+    }
+    
+    header .Header nav ul .CTA:hover{
+        visibility: collapse;
+    }
+
+    #Home h1 {
+        font-size: 4rem;
+    }
+
+    #Home .button .CTA {
+        font-size: 2.5rem;
+        color: #009dff;
+        font-weight: lighter;
+        font-family: 'Times New Roman', Times, serif;
+        border-width: 0.4rem;
     }
 }
 
