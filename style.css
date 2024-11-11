@@ -10,6 +10,20 @@ html{
     scroll-behavior: smooth;
 }
 
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 body{
     background: black;
     cursor: ;
@@ -17,6 +31,15 @@ body{
 
 a{
     text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
 /*Header Styling*/
@@ -96,7 +119,7 @@ header .Header nav ul .CTA{
     padding: 7px ;
     color: #009dff;
     font-weight: bold;
-    display: flex;
+    display: inline;
     margin-left: auto;
 }
 
@@ -176,6 +199,7 @@ header .Header nav ul .CTA:hover{
 
 #Academics{
     color: aliceblue;
+    display: flex;
     flex-direction: column;
     max-width: 1500px;
     margin: 0 auto;
@@ -185,10 +209,12 @@ header .Header nav ul .CTA:hover{
 #Academics .Academic-Top{
     max-width: 500px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #Academics .Academic-Top h1{
-    font-size: 3rem;
+    font-size: 5rem;
     color: transparent;
     background: linear-gradient(50deg, lightblue, #009dff, lightblue, #009dff, whitesmoke, #009dff, lightblue,#009dff, lightblue, #009dff, lightblue);
     background-size: 200%;
@@ -196,22 +222,29 @@ header .Header nav ul .CTA:hover{
     -webkit-background-clip: text;
     align-items: center;
     justify-content: center;
+    font-weight: lighter;
 }
 
 #Academics .Academic-Top p{
-    align-items: left ;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    align-items: center;
 }
 
-#Academics .Academic-Bottom{
+#Academics .Academic-Bottom {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap:unset;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
-#Academic .Academic-Item{
-    flex-basis: 80%;
+#Academics .Academic-Item {
+    flex-basis: 20%; /* Adjust this to control item width */
+    flex-shrink: 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -219,12 +252,42 @@ header .Header nav ul .CTA:hover{
     padding: 30px;
     border-radius: 10px;
     background-color: burlywood;
-    background-size: cover;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin: 10px; /* Add margin to separate items */
 }
 
+#Academics .Academic-Item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#Academics .Academic-Item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#Academics .Academic-Item p {
+    color: white;
+    text-align: left;
+}
+
+#Academics .Academic-Bottom .icon {
+    flex: 0 0 auto;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
 
 @media(max-width: 480px) {
     header .Brand h1 {
@@ -242,4 +305,50 @@ header .Header nav ul .CTA:hover{
     #Home .button .CTA {
         font-size: 1.6rem;
     }
+
+/* Adjustments for Tablets */
+@media(max-width: 768px) {
+    #Academics .Academic-Bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Academics .Academic-Item {
+        flex-basis: 45%;
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    #Academics .Academic-Top h1 {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    #Academics .Academic-Top p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Adjustments for Mobile Devices */
+@media(max-width: 480px) {
+    #Academics .Academic-Item {
+        flex-basis: 90%;
+        padding: 15px;
+    }
+
+    #Academics .Academic-Top h1 {
+        font-size: 3rem;
+    }
+
+    #Academics .Academic-Top p {
+        font-size: 1rem;
+    }
+
+    #Academics .Academic-Bottom .icon {
+        height: 60px;
+        width: 60px;
+    }
+}
+
 /*Academics Section*/
+
