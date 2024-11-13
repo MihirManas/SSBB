@@ -213,6 +213,22 @@ header .Header nav ul .CTA:hover{
     flex-direction: column;
 }
 
+#Academics{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#Academics .Academic-Top{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 #Academics .Academic-Top h1{
     font-size: 5rem;
     color: transparent;
@@ -265,7 +281,7 @@ header .Header nav ul .CTA:hover{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #29323c 0%, #009dff 100%);
     opacity: 0.9;
     z-index: -1;
 }
@@ -282,6 +298,12 @@ header .Header nav ul .CTA:hover{
     text-align: left;
 }
 
+#Academics .Academic-Bottom .icon {
+    flex: 0 0 auto;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
 #Glory .Glory {
 	flex-direction: row;
 	text-align: left;
